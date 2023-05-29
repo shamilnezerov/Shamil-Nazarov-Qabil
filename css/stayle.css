@@ -297,17 +297,17 @@ main {
   margin-top: 32px;
   font-weight: bold;
 }
-#mobile_lang{
+#mobile_lang {
   width: 30px;
   height: 30px;
   position: absolute;
   bottom: 14%;
   left: 4%;
 }
-#mobile_lang a{
+#mobile_lang a {
   font-size: 20px;
 }
-#mobile_lang ul li{
+#mobile_lang ul li {
   margin-top: -50px;
 }
 .mobile_item ul {
@@ -360,12 +360,11 @@ main {
   }
   .top_slider {
     width: 100%;
-
   }
   .cart {
-    width: 40%;
+    width: 60%;
   }
-  
+
   .menu_icon {
     display: block;
     font-size: 40px;
@@ -379,5 +378,4 @@ main {
     height: 40px;
     cursor: pointer;
   }
-
 }
