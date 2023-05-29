@@ -1,0 +1,383 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none !important;
+  color: #fff !important;
+}
+
+header {
+  padding: 50px 0;
+  background-image: url(/img/Back-Images.svg);
+  background-size: cover;
+  height: 425px;
+}
+.left {
+  align-items: center;
+}
+.nav {
+  align-items: center;
+}
+.logo {
+  font-family: "Gilroy-Bold";
+  font-size: 42px;
+}
+.menu {
+  margin-left: 50px;
+  height: 65px;
+  padding: 13px;
+  background: rgba(255, 255, 255, 0.16);
+  border-radius: 8px;
+  border: 0.84px solid;
+  border-color: linear-gradient(
+    169.15deg,
+    rgba(15, 247, 240, 0.4) 0%,
+    rgba(214, 134, 255, 0.4) 96.79%
+  ) !important;
+}
+.menu a {
+  margin-top: 5px;
+  margin-left: 35px;
+}
+.menu p {
+  display: inline-block;
+  margin-left: 35px;
+}
+.menu span {
+  margin-right: 20px;
+  cursor: pointer;
+}
+.right button {
+  margin-left: 15px;
+  padding: 15px;
+}
+.watch {
+  width: 155px;
+  position: relative;
+  height: 65px;
+  background: radial-gradient(
+      100% 100% at 0% 0%,
+      rgba(255, 255, 255, 0.4) 0%,
+      rgba(255, 255, 255, 0) 100%
+    )
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  box-shadow: inset -2.41843px -2.41843px 120.921px rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(5px);
+  border-radius: 8px;
+}
+.user {
+  width: 140px;
+  height: 65px;
+  background: rgba(255, 255, 255, 0.16);
+  border-radius: 8px;
+}
+.rec {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 50%;
+  right: 7%;
+  transform: translateY(-50%);
+  background: #e24d4d;
+  box-shadow: -1.3px 1.3px 4px rgba(248, 0, 0, 0.4);
+  border-radius: 12.5px;
+}
+
+.transition {
+  position: absolute;
+  width: 100%;
+  height: 92px;
+  left: 0px;
+  top: 333px;
+  background: linear-gradient(
+    179.83deg,
+    #1f1f1f 0.14%,
+    rgba(34, 34, 34, 0.369792) 62.97%,
+    rgba(34, 34, 34, 0) 99.84%
+  );
+  transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.menu_icon {
+  display: none;
+}
+
+main {
+  background: #1f1f1f;
+}
+.cart {
+  /* position: absolute; */
+  margin: 30px 30px 0 0;
+  height: 220px;
+  overflow: hidden;
+  transition: 0.7s;
+}
+
+.cart_buttom p {
+  margin-top: 25px;
+  font-family: "Gilroy-Bold";
+  font-size: 14px;
+  line-height: 120%;
+}
+.follow,
+.play_btn,
+.unfollow {
+  width: 34.11px;
+  height: 34.11px;
+  border-radius: 34.1053px;
+  border: 1px solid #e24d4d;
+}
+
+/* .top_slider{
+    position: relative;
+} */
+.cart:hover {
+  border: 1px solid #e24d4d;
+  border-radius: 10px;
+  height: 300px;
+  transform: scale(1.2);
+}
+
+#language {
+  position: absolute;
+  width: 4%;
+  height: 13%;
+  left: 37%;
+  top: 14%;
+  background: rgba(255, 255, 255, 0.16);
+  border-radius: 6.97721px;
+}
+.language_item {
+  width: 100%;
+  margin-top: 10px;
+}
+.language_item a {
+  text-align: center;
+  display: block;
+  margin-top: 5px;
+}
+.language img {
+  width: 60px;
+  font-size: 60px;
+  height: 60px;
+}
+
+.watch_popup {
+  width: 260px;
+  height: 211.57px;
+  background: radial-gradient(
+      100% 100% at 0% 0%,
+      rgba(255, 255, 255, 0.4) 0%,
+      rgba(255, 255, 255, 0) 100%
+    )
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  box-shadow: inset -2.10923px -2.10923px 105.462px rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(4.36076px);
+  border: 1px solid #e24d4d;
+  border-radius: 6.97721px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.close button {
+  z-index: 5;
+  border: 1px solid #e24d4d;
+  position: absolute;
+  top: -8px;
+  right: -12px;
+  width: 25px;
+  height: 25px;
+  background: radial-gradient(
+      100% 100% at 0% 0%,
+      rgba(255, 255, 255, 0.4) 0%,
+      rgba(255, 255, 255, 0) 100%
+    )
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  box-shadow: inset -1.14875px -1.14875px 57.4376px rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(2.375px);
+  border-radius: 19px;
+}
+.close img {
+  width: 10px;
+  height: 10px;
+  margin-bottom: 12px;
+}
+.item {
+  width: 207px;
+  height: 41px;
+  margin-top: 10px;
+  margin-left: 8px;
+  background: #1f1f1f;
+  border-radius: 2.75083px;
+  align-items: center;
+}
+.item p {
+  font-family: "Gilroy-Bold";
+  font-size: 15px;
+  line-height: 120%;
+  color: #ffffff;
+}
+.watch_list {
+  position: absolute;
+  top: 11.5%;
+  left: 61.8%;
+}
+
+.signin_modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 490px;
+  height: 612px;
+  background: radial-gradient(
+      100% 100% at 0% 0%,
+      rgba(255, 255, 255, 0.4) 0%,
+      rgba(255, 255, 255, 0) 100%
+    )
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  box-shadow: inset -2.41843px -2.41843px 120.921px rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(7.5px);
+  border: 1px solid #e24d4d;
+
+  border-radius: 30px;
+}
+
+.signin_modal input {
+  width: 369px;
+  height: 52px;
+  background: #0d0d0d;
+  border-radius: 8px;
+}
+
+.signin_modal button {
+  width: 170px;
+  height: 48px;
+  margin-top: 20px;
+  background: radial-gradient(
+      100% 100% at 0% 0%,
+      rgba(255, 255, 255, 0.4) 0%,
+      rgba(255, 255, 255, 0) 100%
+    )
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  box-shadow: inset -3.32534px -3.32534px 166.267px rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(6.875px);
+  border-radius: 55px;
+}
+.signin_modal a {
+  position: absolute;
+  right: 60px;
+  margin-top: 5px;
+}
+.signin_modal p {
+  font-size: 12px;
+  margin: 0 60px;
+}
+.signin_modal h3 {
+  margin-bottom: 30px;
+}
+
+/* .mobile_menu {
+  display: none;
+} */
+.mobile {
+  position: absolute;
+  width: 60%;
+  height: 100vh;
+  background-color: #0d0d0d;
+  top: 0px;
+  left: 0px;
+  display: none;
+}
+.mobile_logo {
+  margin-top: 40px;
+  margin-left: 40px;
+}
+.mobile_logo a {
+  font-size: 40px;
+  margin-top: 32px;
+  font-weight: bold;
+}
+#mobile_lang{
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  bottom: 14%;
+  left: 4%;
+}
+#mobile_lang a{
+  font-size: 20px;
+}
+#mobile_lang ul li{
+  margin-top: -50px;
+}
+.mobile_item ul {
+  position: absolute;
+  top: 20%;
+  left: 0%;
+}
+.mobile_item ul li {
+  list-style: none;
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+.mobile_language {
+  bottom: 2%;
+  left: 5%;
+  position: absolute;
+}
+
+.mobile_language a {
+  font-size: 24px;
+}
+.mobile_language button img {
+  width: 32px;
+  height: 14px;
+}
+
+.mobile_item .mobile_language button {
+  width: 30px;
+  height: 30px;
+  background-color: #0d0d0d;
+  border: none;
+}
+
+@media screen and (max-width: 576px) {
+  .menu {
+    display: none;
+  }
+  .right {
+    display: none;
+  }
+  .nav {
+    margin-top: -30px;
+    margin-left: 15px;
+  }
+  header {
+    background-image: url(/img/Back-Images.svg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+  }
+  .top_slider {
+    width: 100%;
+
+  }
+  .cart {
+    width: 40%;
+  }
+  
+  .menu_icon {
+    display: block;
+    font-size: 40px;
+    margin-right: 5%;
+    /* margin-top: 0%; */
+  }
+  .menu_icon button {
+    background-color: transparent;
+    border: none;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+  }
+
+}
