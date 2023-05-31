@@ -26,10 +26,10 @@ function siginin() {
 }
 function mobilemenu() {
   var popup = document.getElementById("mobile-menu");
-  if (popup.style.display === "none") {
-    popup.style.display = "inline";
+  if (popup.style.left == "-60%") {
+    popup.style.left = "0%";
   } else {
-    popup.style.display = "none";
+    popup.style.left = "-60%";
   }
 }
 
@@ -42,5 +42,11 @@ function mobileLangPopup() {
   }
 }
 
-
-
+function logIN() {
+  var popup = document.getElementById("user_popup");
+  if (popup.style.display === "none") {
+    popup.style.display = "inline";
+  } else {
+    popup.style.display = "none";
+  }
+}

@@ -106,7 +106,6 @@ main {
   background: #1f1f1f;
 }
 .cart {
-  /* position: absolute; */
   margin: 30px 30px 0 0;
   height: 220px;
   overflow: hidden;
@@ -126,11 +125,33 @@ main {
   height: 34.11px;
   border-radius: 34.1053px;
   border: 1px solid #e24d4d;
+  text-align: center;
+}
+.follow,
+.unfollow {
+  background: radial-gradient(
+      100% 100% at 0% 0%,
+      rgba(255, 255, 255, 0.4) 0%,
+      rgba(255, 255, 255, 0) 100%
+    )
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  box-shadow: inset -2.06203px -2.06203px 103.101px rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(4.26316px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 34.1053px;
 }
 
-/* .top_slider{
-    position: relative;
-} */
+.play_btn {
+  background: radial-gradient(100% 100% at 0% 0%, #0cf9f0 0%, #d686ff 100%)
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  box-shadow: inset -2.53935px -2.53935px 126.967px rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(5.25px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 42px;
+}
+
 .cart:hover {
   border: 1px solid #e24d4d;
   border-radius: 10px;
@@ -276,17 +297,14 @@ main {
   margin-bottom: 30px;
 }
 
-/* .mobile_menu {
-  display: none;
-} */
 .mobile {
   position: absolute;
   width: 60%;
   height: 100vh;
   background-color: #0d0d0d;
   top: 0px;
-  left: 0px;
-  display: none;
+  left: -60%;
+  transition: 0.5s;
 }
 .mobile_logo {
   margin-top: 40px;
@@ -341,7 +359,7 @@ main {
   border: none;
 }
 
-@media screen and (max-width: 576px) {
+@media (max-width: 600px) {
   .menu {
     display: none;
   }
@@ -369,7 +387,6 @@ main {
     display: block;
     font-size: 40px;
     margin-right: 5%;
-    /* margin-top: 0%; */
   }
   .menu_icon button {
     background-color: transparent;
@@ -377,5 +394,28 @@ main {
     width: 40px;
     height: 40px;
     cursor: pointer;
+  }
+
+  .logIn_icon {
+    display: block;
+    font-size: 40px;
+    margin-right: -36%;
+  }
+
+  .logIn_icon button {
+    background-color: transparent;
+    border: none;
+    width: 40px;
+    height: 44px;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 576px) {
+  .mobile {
+    display: none;
+  }
+  .logIn_icon {
+    display: none;
   }
 }
